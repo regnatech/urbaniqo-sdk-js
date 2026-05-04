@@ -1,0 +1,13 @@
+node_modules/
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Examples have their own deps; not tracked here.
+examples/*/node_modules/
+examples/*/package-lock.json
+
+# Note: dist/ IS committed so the package is consumable as a local
+# `file:` dependency without forcing consumers to install our
+# devDependencies just to run tsc.

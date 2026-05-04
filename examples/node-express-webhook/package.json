@@ -1,0 +1,13 @@
+{
+  "name": "example-node-express-webhook",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "urbaniqo-sdk-js": "file:../..",
+    "express": "^4.21.0"
+  }
+}

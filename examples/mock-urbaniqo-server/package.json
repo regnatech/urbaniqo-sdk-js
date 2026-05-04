@@ -1,0 +1,17 @@
+{
+  "name": "mock-urbaniqo-server",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Local stand-in for the Urbaniqo Transit API. Lets agencies test their SDK integration without hitting production.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "send-test-purchase": "node send-test-purchase.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

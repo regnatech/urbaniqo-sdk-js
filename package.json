@@ -1,0 +1,51 @@
+{
+  "name": "urbaniqo-sdk-js",
+  "version": "1.0.0",
+  "description": "Official Node.js SDK for the Urbaniqo Transit protocol — sell your tickets, passes and subscriptions through the Urbaniqo app.",
+  "keywords": [
+    "urbaniqo",
+    "transit",
+    "ticketing",
+    "transport",
+    "sdk"
+  ],
+  "license": "MIT",
+  "author": "Regna",
+  "homepage": "https://github.com/regnatech/urbaniqo-sdk-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/regnatech/urbaniqo-sdk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/regnatech/urbaniqo-sdk-js/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "@types/node": "^20.0.0"
+  }
+}
